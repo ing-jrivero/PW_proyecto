@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(243, 178, 178);
+    width: 100vw;
+    height: 30vh;
+}
+#arriba{
+    display:flex;
+    width: 100%;
+    height:70%;
+
+}
+#logo{
+    width: 30%;
+    height: 100%;
+    border: 5px solid rgb(243, 178, 178);
+}
+#ima_logo{
+    width: 100%;
+    height: 100%;
+}
+#busqueda{
+    width: 50%;
+    height: 100%;
+    
+}
+#ima_busqueda{
+    display:block;
+    margin:auto;
+    padding-top: 10%;
+}
+#usuario{
+    width: 20%;
+    height: 100%;
+    padding-top: 4%;
+    border: 5px solid rgb(243, 178, 178);
+}
+#ima_usuario{
+    width: 100%;
+    height: 65%;
+    display:block;
+    margin:auto;
+    
+}
+
+
+#barra{
+    background-color:blue;
+    width: 100%;
+    height:28%;
+    border: 5px solid rgb(243, 178, 178);
+
+}
+main{
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 55vh;
+
+}
+#noticias{
+    background-color:crimson;
+    width: 100%;
+    height:100%;
+   /* justify-items: center;*/
+}
+#ima_barra{
+    width: 100%;
+    height: 100%;
+    display:block;
+    margin:auto;
+    
+}
+#ima_noticias{
+    display:block;
+    margin:auto;
+    padding-top: 1.8%;
+}
+
+#ima_info{
+    width: 100%;
+    height: 75%;
+    display:block;
+    margin:auto;
+    padding-top:2%;
+    border: 5px solid rgb(243, 178, 178);
+}
+
+footer{
+    background-color: rgb(243, 178, 178);
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+}
