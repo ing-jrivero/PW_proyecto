@@ -1,30 +1,32 @@
 *{
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 header{
-    background-color: rgb(243, 178, 178);
+    background-color: rgb(230, 78, 78);
     width: 100vw;
     height: 30vh;
 }
 #arriba{
     display:flex;
     width: 100%;
-    height:70%;
+    height:78%;
 
 }
 #logo{
     width: 30%;
     height: 100%;
-    border: 5px solid rgb(243, 178, 178);
+    border: 5px solid rgb(230, 78, 78);
     
 }
 #ima_logo{
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 40%;
 }
 #busqueda{
     width: 50%;
@@ -40,7 +42,7 @@ header{
     width: 20%;
     height: 100%;
     padding-top: 4%;
-    border: 5px solid rgb(243, 178, 178);
+    border: 5px solid rgb(230, 78, 78);
 }
 #ima_usuario{
     width: 100%;
@@ -52,18 +54,109 @@ header{
 
 
 #barra{
-    background-color:blue;
+    background-color:white;
     width: 100%;
-    height:28%;
-    border: 5px solid rgb(243, 178, 178);
+    height:22%;
+    border: 5px solid rgb(230, 78, 78);
+    
 
 }
+.navegacion{
+    width: 100%;
+    background:#fff;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu>li{
+    position: relative;
+	display: inline-block;
+    margin: 0 .5em 0 .5em;
+}
+.menu>li>a{
+    display: block;
+    padding: .8em 1.2em;
+    color:#353535;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:#CE7D35;
+    transition: all .3s;
+}
+/*Submenus*/
+.submenu{
+    position: absolute;
+    background:#3333;
+    width: 140%;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 1.5s;
+    z-index: 50;
+
+}
+.submenu li a{
+    display: block;
+    padding: .8em;
+    color:#fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+
 main{
     background-color: cornflowerblue;
     width: 100vw;
     height: 55vh;
+    
 
 }
+
+#noticias{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 55%;
+    display: flex;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+.slider img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.slider input[type="radio"]{
+    position: relative;
+    z-index: 50;
+    margin:3em;
+}
+
+.slider input[type="radio"]:checked ~ img {
+    opacity: 1;
+}
+
 #noticias{
     background-color:crimson;
     width: 100%;
@@ -77,24 +170,42 @@ main{
     margin:auto;
     
 }
-#ima_noticias{
-    display:block;
-    margin:auto;
-    padding-top: 1.8%;
+
+.contenido{
+    
 }
 
-#ima_info{
-    width: 100%;
-    height: 75%;
-    display:block;
-    margin:auto;
-    padding-top:2%;
-    border: 5px solid rgb(243, 178, 178);
-}
+
+
 
 footer{
-    background-color: rgb(243, 178, 178);
+    background-color: rgb(230, 78, 78);
+    color: gainsboro;
     width: 100vw;
     height: 15vh;
     text-align: center;
+    display:flex;
+    
+    
+}
+
+footer>section{
+    width:50%;
+    height: 100%;
+    padding-top: 1em;
+    
+}
+footer>section>p{
+    padding-top: 1em;
+}
+
+#redes>div{
+    
+    display: flex;
+    margin-left: 12em;
+}
+#iconos-redes img{
+    width: 4em;
+    height: 4em;
+    padding-top: .8em;
 }
