@@ -1104,12 +1104,7 @@
 /*///////////////////Escritorio///////////////////////////////////////*/
 @media (min-width : 980px){
 
-    .menu_bar{
-        width:0;
-        height: 0;
-        visibility: hidden;
-    }
-
+    
     header{
         background-color: rgb(230, 78, 78);
         width: 98.7vw;
@@ -1171,18 +1166,33 @@
         padding:.2em;
         display: flex;
         
+        
 
     }
+
+    #btn_menu,#label,#ico-menu{
+        display:none;
+    }
+    
+
     .navegacion{
+        position: static;
         width: 100%;
         background:#fff;
+        display:flex;
+        opacity: 1;
+        margin:0;
+        font-size: 18;
     }
     .navegacion ul{
+        display:inline-block;
         list-style: none;
+        flex-direction: row;
     }
     .menu>li{
         position: relative;
         display: inline-block;
+        border:none;
         margin: 0 .5em 0 .5em;
     }
     .menu>li>a{
@@ -1201,10 +1211,14 @@
         position: absolute;
         background:#3333;
         width: 140%;
+        height:400%;
+        margin: 0;
+        justify-content:space-between;
         visibility: hidden;
         opacity: 0;
         transition:opacity 1.5s;
         z-index: 50;
+        font-size: 18;
 
     }
     .submenu li a{
@@ -1226,8 +1240,8 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        left:72%;
-        top:26.7%;
+        left:76%;
+        top:27.2%;
         transform:translate(-100%,-50%);
         background:rgb(255, 0, 0);
         padding: .8rem .5rem .5rem .9rem;
@@ -1271,11 +1285,12 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        left:73%;
+        left:76%;
         top:23.5%;
         width: 25%;
         height: 6%;
         justify-content: space-evenly;
+        padding-top: .2rem;
         
     }
     .ubicacion{
