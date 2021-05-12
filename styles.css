@@ -455,6 +455,7 @@
         
         width: 60%;
         height: 70%;
+        padding-top: .3rem;
     }
     .opciones-usuario>div{
       /* border: 5px solid black;*/
@@ -652,7 +653,7 @@
         height: 30vh;
         margin:0;
         padding: 0;
-        border: 5px solid green;
+    /*    border: 5px solid green;*/
     }
 
     #arriba{
@@ -698,6 +699,28 @@
         margin:0;
         
     }
+    #ico-menu{
+        width: 3rem;
+        height:3rem;
+    }
+    #btn_menu{
+        display:none;
+    }
+    header label{
+        display: block;
+        width: 3.5rem;
+        height:3.5rem;
+        padding:.2rem;
+        
+        
+    }
+    header label:hover{
+        cursor: pointer;
+        background:rgb(175, 55, 55);
+        
+    }
+
+   
 
 
     #barra{
@@ -710,16 +733,35 @@
         
 
     }
+
+ 
+
     .navegacion{
-        width: 100%;
+        width: 21.5rem;
+        height:15rem;
+        position: absolute;
         background:#fff;
+        margin-left: -50%;
+        z-index: 60;
+        transition:all .5s;
+        font-size: 22px;
     }
+    #btn_menu:checked ~ .navegacion{
+       margin:0;
+       margin-left: -.5%;
+
+    }
+
     .navegacion ul{
+        display:flex;
         list-style: none;
+        flex-direction: column;
     }
+    
     .menu>li{
         position: relative;
         display: inline-block;
+        border-top: 1px solid rgb(184, 184, 184);
         margin: 0 .5em 0 .5em;
     }
     .menu>li>a{
@@ -733,23 +775,34 @@
         color:#CE7D35;
         transition: all .3s;
     }
+    
     /*Submenus*/
     .submenu{
+        font-size:21px;
+        display: inline-block;
         position: absolute;
-        background:#3333;
-        width: 140%;
+        /*border: 2px solid green;*/
+        background:rgb(250, 242, 242);
+        width: 85%;
+        height:190%;
+        margin-left: 20.5rem;
+        margin-top:-3.8rem;
+        
         visibility: hidden;
         opacity: 0;
+        justify-content:space-between;
         transition:opacity 1.5s;
-        z-index: 50;
+        z-index: 60;
 
     }
     .submenu li a{
-        display: block;
+        
+       /* display: block;*/
         padding: .8em;
-        color:#fff;
+        color:black;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
+        
         
     }
     .menu li:hover .submenu{
@@ -757,6 +810,7 @@
         opacity: 1;
 
     }
+   
 
     .buscar{
         display: flex;
@@ -768,7 +822,7 @@
         transform:translate(-100%,-50%);
         background:rgb(255, 0, 0);
         padding: .8rem .5rem .5rem .9rem;
-        height: 3.5rem;
+        height: 3.57rem;
         border-radius: 1rem;
         
     }
@@ -796,7 +850,7 @@
 
     /* animacio de la barra de busqueda*/
     .buscar:hover>.buscar_texto{
-        width: 24rem;
+        width: 30rem;
     }
     .buscar_texto::placeholder {
         color:white;
@@ -818,7 +872,7 @@
     .ubicacion{
         width: 30%;
         height: 100%;
-        padding-left: 1.5rem;
+        padding-left: .5rem;
     
     
     }
@@ -854,6 +908,7 @@
         
         width: 60%;
         height: 70%;
+        padding-top: .3rem;
     }
     /*.opciones-usuario>div{
         border: 5px solid black;
