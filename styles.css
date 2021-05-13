@@ -741,7 +741,7 @@
         height:15rem;
         position: absolute;
         background:#fff;
-        margin-left: -50%;
+        margin-left: -60%;
         z-index: 60;
         transition:all .5s;
         font-size: 22px;
@@ -749,6 +749,7 @@
     #btn_menu:checked ~ .navegacion{
        margin:0;
        margin-left: -.5%;
+       margin-top: -.5%;
 
     }
 
