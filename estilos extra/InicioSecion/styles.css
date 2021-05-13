@@ -100,6 +100,87 @@
 @media (min-width : 680px){
     
     
+    header{
+        width: 100vw;
+        height: 28vh;
+        background-color: rgb(230, 78, 78);
+      /*  border:2px solid blue;*/
+        font-size: 20px;
+    }
+    .caja-header{
+        width:100%;
+        height:100%;
+        position: relative;
+    }
+  
+    .pag-anterior{
+       /* border: 2px solid green;*/
+        position: absolute;
+        top:1rem;
+        left:1rem;
+        text-decoration: none;
+        color:rgb(0, 36, 196);
+    }
+    .caja-header > img{
+       /* border: 2px solid green;*/
+        position:absolute;
+        top: 0;
+        right:0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 8rem;
+    }
+    .caja-header > h1{
+       /* border: 2px solid green;*/
+        position:absolute;
+        bottom: 0;
+        left: 20rem;
+    }
+  
+    header  img{
+        width: 50%;
+        height:70%;
+
+    }
+    main{
+        width: 100vw;
+        height:60vh;
+        background-color: rgb(230, 78, 78);
+        padding-top: 2rem;
+    }
+   
+
+    .contenido{
+        width:70%;
+        height:95%;
+        background-color: rgb(250, 245, 245);
+        border: 2px solid black;
+        margin: auto;
+        font-size: 1.8rem;
+        text-align: center;
+        
+        
+    }
+    .contenido h4,.entrada,p{
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .entrada,.boton-iniciarS{
+        font-size: 1.8rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .contenido > a{
+        text-decoration: none;
+    }
+
+    footer{
+        width: 100vw;
+        height:12vh;
+        background-color: rgb(230, 78, 78);
+    }
 
 }
 
