@@ -2,6 +2,7 @@
     <head>
         <title>Diseño P.W.</title>
         <link rel="stylesheet" href="/estilos extra/InicioSecion/styles.css">
+        <script src="/Js/Inicio-Sesion.js"></script>
       <!--  <link rel="stylesheet" href="/iconos/buscar/styles.css">-->
         
     </head>
@@ -20,13 +21,15 @@
 
             <main>
                <section class="contenido">
-                   <h4>Correo Electr&oacute;nico</h4>
-                   <input type="email" class="entrada">
-                   <h4>Contraseña</h4>
-                   <input type="password" class="entrada" >
-                   <p></p>
-                   <button type="" class="boton-iniciarS">Iniciar Sesi&oacute;n</button>
-                   <p>¿No tienes una cuenta?</p><a href="#"><p>Registrarse</p></a>
+                    <form>
+                        <h4>Correo Electr&oacute;nico</h4>
+                        <input type="email" class="entrada" required>
+                        <h4>Contraseña</h4>
+                        <input type="password" class="entrada" id="pass" required>
+                        <p></p>
+                        <button type="" class="boton-iniciarS" onclick="validar()">Iniciar Sesi&oacute;n</button>
+                        <p>¿No tienes una cuenta?</p><a href="/Registro.html"><p>Registrarse</p></a>
+                    </form>
 
 
                </section>
