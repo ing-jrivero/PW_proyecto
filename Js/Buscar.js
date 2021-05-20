@@ -11,7 +11,7 @@ function buscar()
     if(re_guitarras.test(texto))
     {
         alert("buscaste guitarras")
-
+        
     }
     else if(re_baterias.test(texto))
     {
