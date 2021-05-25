@@ -1329,15 +1329,18 @@
     }
     
 
+    #redes{
+        margin-top: 1rem;
+    }
     #redes>div{
-        
+    
         display: flex;
         margin-left: 10em;
     }
     #iconos-redes img{
         width: 4em;
         height: 4em;
-        padding-top: .8em;
+        padding-top: .8rem;
     }
 
 }
