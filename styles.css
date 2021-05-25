@@ -1328,9 +1328,13 @@
         margin: .1rem 0 0 0;
     }
     
+    #info{
+       /* border: 2px solid blue;*/
+    }
 
     #redes{
-        margin-top: 1rem;
+        /*border:2px solid green;*/
+        padding-top: 1rem;
     }
     #redes>div{
     
