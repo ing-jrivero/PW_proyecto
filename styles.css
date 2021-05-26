@@ -57,7 +57,7 @@
         height: 100%;
         padding-top: 4%;
     /* border: 5px solid rgb(230, 78, 78);*/
-    padding-right: .5em;
+        padding-right: .5em;
     }
     #ima_usuario{
         width: 100%;
@@ -108,10 +108,12 @@
         height:16rem;
         position: absolute;
         background:#fff;
+        background:rgba(88, 88, 88, .95);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
         font-size: 24px;
+        
     }
     #btn_menu:checked ~ .navegacion{
         margin:0;
@@ -135,11 +137,15 @@
         display: block;
         padding: .8em 1.2em;
         color:#353535;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#fff;
+        color:#521313;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
         text-decoration: none;
     }
     .menu li a:hover{
         color:#CE7D35;
+        color: white;
         transition: all .3s;
     }
     
@@ -150,6 +156,7 @@
         position: absolute;
         /*border: 2px solid green;*/
         background:rgb(250, 242, 242);
+        background:rgba(88, 88, 88, 0.95);
         width: 93%;
         height:190%;
         margin-left: 14rem;
@@ -167,8 +174,12 @@
        /* display: block;*/
         padding: .8em;
         color:black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        color:#521313;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
         text-decoration: none;
+        font-size: 1.2rem;
         
         
     }
@@ -188,12 +199,12 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        left:68%;
+        left:48%;
         top:26.7%;
         transform:translate(-100%,-50%);
         background:rgb(255, 0, 0);
         padding: .8rem .5rem .5rem .9rem;
-        height: 3.5rem;
+        height: 3rem;
         border-radius: 1rem;
         
     }
@@ -204,41 +215,49 @@
         outline: none;
         color:white;
         font-size: 1.5rem;
+        font-family: 'Courier New', Courier, monospace;
         float: left;
-        line-height: 4rem;
+        /*line-height: 4rem;*/
         transition:.3s;
         width: 0;
     }
 
     .boton{
-        width:2.5rem;
-        height: 2.5rem;
+        width:1.5rem;
+        height: 1.5rem;
         text-decoration: none;
         color: white;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
 
     }
 
     /* animacio de la barra de busqueda*/
     .buscar:hover>.buscar_texto{
-        width: 18rem;
+        width: 12rem;
     }
     .buscar_texto::placeholder {
         color:white;
     }
     .opciones-usuario{
-    /* border: 5px solid green;*/
-        font-size: .7rem;
+        /*border: 5px solid green;*/
+        font-size: .9rem;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left:69%;
+        left:49%;
         top:23.5%;
-        width: 31%;
+        width: 51%;
         height: 6%;
         justify-content: space-evenly;
-        
+        text-align: center;
+        margin-top: .2rem;
+    }
+    .opciones-usuario h5{
+        padding-top:.2rem;
+    }
+    .opciones-usuario div{
+        padding-top:.4rem;
     }
     .ubicacion{
         width: 31%;
@@ -250,7 +269,7 @@
 
 
     .usuario{
-        width: 35%;
+        width: 44%;
         height: 100%;
         padding:0rem;
         
@@ -259,7 +278,7 @@
     .carrito{
         width: 31%;
         height: 100%;
-        margin-left: .5rem;
+        margin-left: 0rem;
     
         
         
@@ -267,21 +286,21 @@
     }
     .ubicacion img{
         
-        width: 70%;
-        height:70%;
+        width: 40%;
+        height:50%;
         
     }
     .usuario img{
         
-        width: 80%;
-        height:70%;
+        width: 40%;
+        height:50%;
         
     }
     #ico-carrito{
         
-        width: 60%;
-        height: 70%;
-        padding-top: .3rem;
+        width: 40%;
+        height: 50%;
+        
     }
     .opciones-usuario>div{
       /* border: 5px solid black;*/
@@ -363,14 +382,23 @@
         width: 100%;
         height: 95.3%;
         
+        
     }
     .Scaja>div{
         width: 100%;
         height: 33.3%;
         padding-top: 1rem;
         text-align: center;
+        
 
     
+    }
+    .Scaja a{
+        text-decoration: none;
+        color: white;
+    }
+    .Scaja h2{
+        margin-top:2rem;
     }
     .populares{
         
@@ -475,7 +503,7 @@
     }
     header{
         background-color: rgb(230, 78, 78);
-        width: 97.2vw;
+        width: 98.2vw;
         height: 30vh;
         margin:0;
         padding: 0;
@@ -567,6 +595,7 @@
         height:15rem;
         position: absolute;
         background:#fff;
+        background:rgba(88, 88, 88, 0.95);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
@@ -595,11 +624,14 @@
         display: block;
         padding: .8em 1.2em;
         color:#353535;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#521313;
+        font-family: 'Courier New', Courier, monospace;
         text-decoration: none;
+        font-weight: bold;
     }
     .menu li a:hover{
         color:#CE7D35;
+        color: white;
         transition: all .3s;
     }
     
@@ -610,6 +642,7 @@
         position: absolute;
         /*border: 2px solid green;*/
         background:rgb(250, 242, 242);
+        background:rgba(88, 88, 88, 0.95);
         width: 85%;
         height:190%;
         margin-left: 20.5rem;
@@ -626,9 +659,10 @@
         
        /* display: block;*/
         padding: .8em;
-        color:black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#521313;
+        font-family: 'Courier New', Courier, monospace;
         text-decoration: none;
+        font-weight: bold;
         
         
     }
@@ -645,11 +679,11 @@
         align-items: center;
         position: absolute;
         left:72%;
-        top:26.7%;
+        top:26.6%;
         transform:translate(-100%,-50%);
         background:rgb(255, 0, 0);
         padding: .8rem .5rem .5rem .9rem;
-        height: 3.57rem;
+        height: 2.8rem;
         border-radius: 1rem;
         
     }
@@ -667,11 +701,11 @@
     }
 
     .boton{
-        width:2.5rem;
-        height: 2.5rem;
+        width:2rem;
+        height: 2rem;
         text-decoration: none;
         color: white;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
 
     }
 
@@ -683,28 +717,30 @@
         color:white;
     }
     .opciones-usuario{
-    /* border: 5px solid green;*/
-        font-size: .7rem;
+      /* border: 5px solid green;*/
+        font-size: .9rem;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
         left:73%;
-        top:23.5%;
+        top:23.2%;
         width: 25%;
         height: 6%;
         justify-content: space-evenly;
+        text-align: center;
+        
         
     }
     .ubicacion{
         width: 30%;
         height: 100%;
-        padding-left: .5rem;
+        
     
     
     }
     .usuario{
-        width: 30%;
+        width: 50%;
         height: 100%;
         padding:0;
         
@@ -721,29 +757,29 @@
     }
     .ubicacion img{
         
-        width: 70%;
-        height:70%;
+        width: 50%;
+        height:55%;
         
     }
     .usuario img{
         
-        width: 80%;
-        height:70%;
+        width: 50%;
+        height:55%;
         
     }
     #ico-carrito{
         
-        width: 60%;
-        height: 70%;
-        padding-top: .3rem;
+        width: 50%;
+        height: 55%;
+        
     }
     /*.opciones-usuario>div{
-        border: 5px solid black;
+        border: 1px solid black;
     }*/
 
     main{
         background-color:crimson;
-        width: 97.2vw;
+        width: 98.2vw;
         height: 115vh;
         margin:0;
         /*border: 5px solid greenyellow;*/
@@ -876,7 +912,7 @@
         position: static;
         /*background-color:red;*/
         color: gainsboro;
-        width: 97.2vw;
+        width: 98.2vw;
         height: 30vh;
         text-align: center;
         display:block;
@@ -905,7 +941,7 @@
         margin-left: 22%;
     }
     #info>div>p{
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
 
     #redes>div{
@@ -1003,6 +1039,7 @@
     
 
     .navegacion{
+        /*border:2px solid black;*/
         position: static;
         width: 100%;
         background:#fff;
@@ -1010,8 +1047,9 @@
         opacity: 1;
         margin:0;
         font-size: 18;
-        padding-top: .4rem;
+        padding-top: .65rem;
         padding-left: .5rem;
+        
         
     }
     .navegacion ul{
@@ -1107,7 +1145,7 @@
         opacity: 0;
         transition:opacity 1.5s;
         z-index: 50;
-        font-size: 17;
+        
         
 
     }
@@ -1138,6 +1176,7 @@
         font-family: 'Courier New', Courier, monospace;
         text-decoration: none;
         font-weight: normal;
+        font-size: 17.5;
        
         
     }
@@ -1198,7 +1237,7 @@
         align-items: center;
         position: absolute;
         left:76%;
-        top:23.2%;
+        top:22.4%;
         width: 24%;
         height: 6%;
         justify-content: space-around;
