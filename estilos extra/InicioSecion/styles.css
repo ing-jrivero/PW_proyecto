@@ -24,15 +24,15 @@
         position: relative;
     }
   
-    .pag-anterior{
-       /* border: 2px solid green;*/
+    /*.pag-anterior{
+        border: 2px solid green;
         position: absolute;
         top:1rem;
         left:1rem;
         text-decoration: none;
         color:rgb(221, 221, 221);
-    }
-    .caja-header > img{
+    }*/
+    .caja-header  img{
        /* border: 2px solid green;*/
         position:absolute;
         top: 0;
@@ -47,11 +47,12 @@
         position:absolute;
         bottom: 0;
         left: 14.5rem;
+        top:12rem;
     }
   
     header  img{
-        width: 60%;
-        height:50%;
+        width: 80%;
+        height:60%;
 
     }
     main{
@@ -113,15 +114,15 @@
         position: relative;
     }
   
-    .pag-anterior{
-       /* border: 2px solid green;*/
+    /*.pag-anterior{
+        border: 2px solid green;
         position: absolute;
         top:1rem;
         left:1rem;
         text-decoration: none;
         color:rgb(221, 221, 221);
-    }
-    .caja-header > img{
+    }*/
+    .caja-header  img{
        /* border: 2px solid green;*/
         position:absolute;
         top: 0;
@@ -135,7 +136,8 @@
        /* border: 2px solid green;*/
         position:absolute;
         bottom: 0;
-        left: 20rem;
+        left: 25rem;
+        top:13.5rem
     }
   
     header  img{
@@ -199,15 +201,15 @@
         position: relative;
     }
   
-    .pag-anterior{
-       /* border: 2px solid green;*/
+    /*.pag-anterior{
+        border: 2px solid green;
         position: absolute;
         top:1rem;
         left:1rem;
         text-decoration: none;
         color:rgb(221, 221, 221);
-    }
-    .caja-header > img{
+    }*/
+    .caja-header  img{
        /* border: 2px solid green;*/
         position:absolute;
         top: 0;
@@ -217,11 +219,13 @@
         margin: auto;
         border-radius: 2rem;
     }
-    .caja-header > h1{
+    .caja-header  h1{
        /* border: 2px solid green;*/
         position:absolute;
         bottom: 0;
         left: 34.5rem;
+        top:14rem;
+        
     }
   
     header  img{
@@ -258,7 +262,7 @@
         margin: auto;
     }
 
-    .contenido > a{
+    .contenido  a{
         text-decoration: none;
     }
 
