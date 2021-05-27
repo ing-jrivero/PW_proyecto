@@ -2,7 +2,7 @@
 function buscar()
 {
     
-    let busqueda=document.querySelectorAll(".buscar > .buscar_texto")[0].value
+    let busqueda=document.querySelectorAll(".buscar > .buscar_texto")[0].value;
     let texto=busqueda.toLowerCase();
     let re_guitarras=/(guitarras?)/i;
     let re_baterias=/(baterias?)/i;
@@ -10,7 +10,8 @@ function buscar()
   //  alert(texto)
     if(re_guitarras.test(texto))
     {
-        alert("buscaste guitarras")
+       /* alert("buscaste guitarras")*/
+        location.href="/guitarras.html";
         
     }
     else if(re_baterias.test(texto))
@@ -24,7 +25,17 @@ function buscar()
     }
     else
     {
-        alert("")
+        if(texto=="")
+        {
+            /*alert("no se busco nada")*/
+
+        }
+        else
+        {
+            alert("")
+
+        }
+        
 
     }
 
