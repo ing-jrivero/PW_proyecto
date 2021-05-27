@@ -1,207 +1,344 @@
-*{
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+<html>
+    <head>
+        <title>Diseño P.W.</title>
+        <link rel="stylesheet" href="/estilos extra/Populares_guitarras_electroacusticas/styles.css">
+        <link rel="stylesheet" href="/iconos/buscar/styles.css">
+        
+        
+    </head>
+        <body>
+            <header>
+                <section id="arriba">
+                    <div id="logo">
+                        <a href="/index.html">
+                            <img id="ima_logo" src="imagen/logo.jpg">
+                        </a>  
 
-header{
-    background-color: rgb(230, 78, 78);
-    width: 100vw;
-    height: 30vh;
-}
-#arriba{
-    display:flex;
-    width: 100%;
-    height:78%;
+                    </div>
+                    <div id="logo_guitarra">
+                        <img src="imagen/guitarraA.png" id="fondo">
+                        <h1>Guitarras Electroac&uacute;sticas Populares</h1>
 
-}
-#logo{
-    width: 30%;
-    height: 100%;
-    border: 5px solid rgb(230, 78, 78);
+                    </div>
+                
+
+                </section>
+                <section id="barra">
+                    
+                    
+                    <div class="barra_menu">
+                        
+                        <input type="checkbox" id="btn_menu">
+                        <label for="btn_menu" id="label"><img src="iconos/menu.PNG" id="ico-menu"></label>
+                            
+                       
+                        <nav class="navegacion">
+                            <ul class="menu">
+                                <li>
+                                <a href="#">Guitarras</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Ac&uacute;sticas</a><li>
+                                            <li><a href="#">El&eacute;ctricas</a></li>
+                                            <li><a href="#">Electroac&uacute;sticas</a></li>
+                                        </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Bajos</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Ac&uacute;sticos</a><li>
+                                        <li><a href="#">El&eacute;ctricos</a></li>
+                                    </ul>    
+                                </li>
+                                <li>
+                                    <a href="#">Percusiones</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Bater&iacute;as</a><li>
+                                            <li><a href="#">Timbales</a></li>
+                                        </ul>                            
+                                </li>
+                                <li>
+                                    <a href="#">Audio</a> 
+                                        <ul class="submenu">
+                                            <li><a href="#">Cables</a><li>
+                                            <li><a href="#">Micro&oacute;fonos</a></li>
+                                            <li><a href="#">Adaptadores</a></li>
+                                            <li><a href="#">Bocinas</a></li>
+                                        </ul>                       
+                                </li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="buscar">
+                        <input type="text" class="buscar_texto"  placeholder="Buscar">
+                        <a href="javascript:buscar()" class="boton">
+                            <i class="icon-buscar"></i>
+                        </a>
+                        <script src="/Js/Boton-buscar.js"></script>
+                    </div>
+                    <div class="opciones-usuario">
+                        <div class="ubicacion">
+                            <a href="#"><img src="imagen/ubicacion.PNG"></a>
+                            <h5>Tiendas</h5>
+                        </div>
+                        <div class="usuario">
+                            <a href="inicio_secion.html"><img src="imagen/usuario_ico.PNG"></a>
+                            <h5>Iniciar Sesion</h5>
+                        </div>
+                        <div class="carrito">
+                             <a href="#"><img src="imagen/carrito.PNG" id="ico-carrito"></a> 
+                             <h5>Compras</h5>
+                        </div>
+
+                    </div>
+
+                    
+     
+            
+
+                </section>
+                
+               
+            </header>
+
+           <main>
+               <div class="opciones">
+                
+                    <input type="checkbox" id="btn_filtrar">
+                    <label for="btn_filtrar" id="btn_filtrar_lbl"><h3>Filtrar</h3></label>
+                
+                <div id="precios-1">
+                    <h2>Precio</h2>
+                    <ul>
+                        
+                        <li><input type="checkbox"> 0 - 499</li>
+                        <li><input type="checkbox"> 500 - 999</li>
+                        <li><input type="checkbox"> 1,000 - 1,499</li>
+                        <li><input type="checkbox"> 1,500 - 1,999</li>
+                        <li><input type="checkbox"> 2,000 - 2,999</li>
+                        <li><input type="checkbox"> 3,000 - 3,999</li>
+                        <li><input type="checkbox"> 4,000 - 4,999</li>
+                        <li><input type="checkbox"> 5,000 - 9,999</li>
+                        <li><input type="checkbox"> 10,000 - 19,999</li>
+                        <li><input type="checkbox"> 20,000 - 29,999</li>
+                        <li><input type="checkbox"> 30,000 - 39,999</li>
+                        <li><input type="checkbox"> 40,000 - 49,999</li>
+                        <li><input type="checkbox"> 50,000 - 59,999</li>
+                        
+                    </ul>
+                    <h2>Marca</h2>
+                    <ul>
+                        
+                        <li><input type="checkbox"> Rogue</li>
+                        <li><input type="checkbox"> Gibson</li>
+                        <li><input type="checkbox"> Mitchell</li>
+                        <li><input type="checkbox"> Epiphone</li>
+                        
+                        
+                    </ul>
+                    <h2>Modelo</h2>
+                    <ul>
+                        
+                        <li><input type="checkbox"> Les Paul</li>
+                        <li><input type="checkbox"> SG</li>
+                        <li><input type="checkbox"> Cl&aacute;sica</li>
+                                                      
+                        
+                    </ul>
+                  
+                    <h2>Estilo</h2>
+                    <ul>
+                        
+                        <li><input type="checkbox"> Ac&uacute;stica</li>
+                        <li><input type="checkbox"> Electrica</li>
+                        <li><input type="checkbox"> Electroac&uacute;stica</li>
+                                                      
+                    </ul>
+
+                </div>
+                
+
+               </div>
+               <section class="contenedor">
+                   
+                    <section id="col-opciones">
+                        <div id="precios">
+                            <h2>Precio</h2>
+                            <ul>
+                                
+                                <li><input type="checkbox"> 0 - 499</li>
+                                <li><input type="checkbox"> 500 - 999</li>
+                                <li><input type="checkbox"> 1,000 - 1,499</li>
+                                <li><input type="checkbox"> 1,500 - 1,999</li>
+                                <li><input type="checkbox"> 2,000 - 2,999</li>
+                                <li><input type="checkbox"> 3,000 - 3,999</li>
+                                <li><input type="checkbox"> 4,000 - 4,999</li>
+                                <li><input type="checkbox"> 5,000 - 9,999</li>
+                                <li><input type="checkbox"> 10,000 - 19,999</li>
+                                <li><input type="checkbox"> 20,000 - 29,999</li>
+                                <li><input type="checkbox"> 30,000 - 39,999</li>
+                                <li><input type="checkbox"> 40,000 - 49,999</li>
+                                <li><input type="checkbox"> 50,000 - 59,999</li>
+                                
+                            </ul>
+                            <h2>Marca</h2>
+                            <ul>
+                                
+                                <li><input type="checkbox"> Rogue</li>
+                                <li><input type="checkbox"> Gibson</li>
+                                <li><input type="checkbox"> Mitchell</li>
+                                <li><input type="checkbox"> Epiphone</li>
+                                
+                                
+                            </ul>
+                            <h2>Modelo</h2>
+                            <ul>
+                                
+                                <li><input type="checkbox"> Les Paul</li>
+                                <li><input type="checkbox"> SG</li>
+                                <li><input type="checkbox"> Cl&aacute;sica</li>
+                                                              
+                                
+                            </ul>
+                          
+                            <h2>Estilo</h2>
+                            <ul>
+                                
+                                <li><input type="checkbox"> Ac&uacute;stica</li>
+                                <li><input type="checkbox"> Electrica</li>
+                                <li><input type="checkbox"> Electroac&uacute;stica</li>
+                                                              
+                                
+                            </ul>
     
-}
-#ima_logo{
-    width: 100%;
-    height: 100%;
-    border-radius: 40%;
-}
-#busqueda{
-    width: 50%;
-    height: 100%;
+                        </div>
     
-}
-#ima_busqueda{
-    display:block;
-    margin:auto;
-    padding-top: 10%;
-}
-#usuario{
-    width: 20%;
-    height: 100%;
-    padding-top: 4%;
-    border: 5px solid rgb(230, 78, 78);
-}
-#ima_usuario{
-    width: 100%;
-    height: 65%;
-    display:block;
-    margin:auto;
-    
-}
-
-
-#barra{
-    background-color:white;
-    width: 100%;
-    height:22%;
-    border: 5px solid rgb(230, 78, 78);
-    
-
-}
-.navegacion{
-    width: 100%;
-    background:#fff;
-}
-.navegacion ul{
-    list-style: none;
-}
-.menu>li{
-    position: relative;
-	display: inline-block;
-    margin: 0 .5em 0 .5em;
-}
-.menu>li>a{
-    display: block;
-    padding: .8em 1.2em;
-    color:#353535;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-}
-.menu li a:hover{
-    color:#CE7D35;
-    transition: all .3s;
-}
-/*Submenus*/
-.submenu{
-    position: absolute;
-    background:#3333;
-    width: 140%;
-    visibility: hidden;
-    opacity: 0;
-    transition:opacity 1.5s;
-    z-index: 50;
-
-}
-.submenu li a{
-    display: block;
-    padding: .8em;
-    color:#fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    
-}
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-
-}
-
-
-
-main{
-    background-color: antiquewhite;
-    width: 100vw;
-    height: 120vh;
-    
-
-}
-
-#noticias{
-    background-color: crimson;
-    width: 100%;
-    height: 45%;
-    display: flex;
-}
-.slider{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    list-style: none;
-    padding:0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
-
-}
-.slider img{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.7s;
-}
-
-.slider input[type="radio"]{
-    position: relative;
-    z-index: 50;
-    margin:3em;
-}
-
-.slider input[type="radio"]:checked ~ img {
-    opacity: 1;
-}
-
-
-#ima_barra{
-    width: 100%;
-    height: 100%;
-    display:block;
-    margin:auto;
-    
-}
-
-.contenido{
-    position: relative;
-    
-}
-
-
-
-
-footer{
-    background-color: rgb(230, 78, 78);
-    color: gainsboro;
-    width: 100vw;
-    height: 15vh;
-    text-align: center;
-    display:flex;
+                    </section>
+         <!--           <section id="contenido">-->
+                        
+                        <div class="elementos" id="normal">
+       <!--                       <p>1</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Rogue_Starter_Acoustic_Guitar_Blue_Burst.webp">
+                                <p>Rogue Starter Acoustic Guitar  Blue Burst</p>
+                                <h3>$1,715.91</h3>
+                            </a>
     
     
-}
-
-footer>section{
-    width:50%;
-    height: 100%;
-    padding-top: 1em;
+                        </div>
+                        <div class="elementos" id="normal">
+        <!--                       <p>2</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Gibson_Les_Paul_Standard_60s_Electric_Guitar_Iced_Tea.webp">
+                                <p>Gibson Les Paul Standard '60s Electric Guitar</p>
+                                <h3>$53,574.56</h3>
+                            </a>
+        
     
-}
-footer>section>p{
-    padding-top: 1em;
-}
-
-#redes>div{
+                        </div>
+                        <div class="elementos" id="normal">
+       <!--                       <p>3</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Rogue_RA-090_Dreadnought_Acoustic_Guitar_Natural.webp">
+                                <p>Rogue Dreadnought Acoustic Guitar  Natural</p>
+                                <h3>$1,929.24</h3>
+                            </a>
     
-    display: flex;
-    margin-left: 12em;
-}
-#iconos-redes img{
-    width: 4em;
-    height: 4em;
-    padding-top: .8em;
-}
+    
+                        </div>
+                        <div class="elementos" id="normal">
+          <!--                     <p>4</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Gibson_SG_Standard_Electric_Guitar_Ebony.webp">
+                                <p>Gibson SG Standard Electric Guitar  Ebony</p>
+                                <h3>$32,136.16</h3>
+                            </a>
+    
+    
+                        </div>
+                        <div class="elementos" id="popular">
+      <!--                        <p>5</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Mitchell_T333CE-BST_Solid_Top_Mahogany_Auditorium_Acoustic-Electric_Guitar_Edge_Burst.webp">
+                                <p>Mitchell Acoustic-Electric Guitar Edge Burst</p>
+                                <h3>$7,074.46</h3>
+                            </a>
+    
+    
+                        </div>
+                        <div class="elementos" id="normal">
+      <!--                       <p>6</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Rogue_RA-090_Concert_Acoustic_Guitar_Black.webp">
+                                <p>Rogue RA-090 Concert Acoustic Guitar  Black</p>
+                                <h3>$1,929.24</h3>
+                            </a>
+    
+    
+                        </div>
+                         <div class="elementos"  id="normal">
+          <!--                    <p>7</p>-->
+                            <a href="#">
+                                <img class="img_elemt" src="/imagen/Epiphone_Songmaker_DR-100_Acoustic_Guitar_Vintage_Sunburst.webp">
+                                <p>Epiphone Acoustic Guitar  Vintage Sunburst</p>
+                                <h3>$3,194.32</h3>
+                            </a>
+    
+    
+                        </div>
+                        <div class="elementos" id="popular">
+        <!--                      <p>8</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Epiphone_J-200_EC_Studio_Acoustic-Electric_Guitar_Black.webp">
+                                <p>Epiphone J-200  Acoustic-Electric Guitar  Black</p>
+                                <h3>$10,697.76</h3>
+                            </a>
+    
+    
+                        </div>
+                        <div class="elementos" id="popular">
+        <!--                        <p>9</p>-->
+                            <a href="#">
+                                <img class="img_elemt"  src="/imagen/Mitchell_O120CESB_Auditorium_Acoustic-Electric_Guitar 3-Color_Sunburst.webp">
+                                <p>Mitchell Acoustic-Electric Guitar Sunburst</p>
+                                <h3>$4,073.08</h3>
+                            </a>
+    
+    
+                        </div>
+                        
+    
+           <!--         </section> -->
+               </section>
+              
+
+
+            </main>
+
+
+            <footer>
+                <section id="info">
+                  <!--  <img id="ima_info" src="imagen/info.PNG"> -->
+                  <h1>Cont&aacute;ctanos</h1>
+                    <div>
+                        <P>Tel&eacute;fono: 5573361</P>
+                        <p>Email: music.shop@gmail.com</p>
+                    </div>
+
+
+                </section>
+                <section id="redes">
+                    <h2>S&iacute;guenos</h2>
+                    <div>
+                        <div id="iconos-redes"><a href="https://www.facebook.com/" target="_blank"><img src="/iconos/174834-social-media-logos/png/036-facebook.png"></a></div>
+                        <div id="iconos-redes"><a href="https://www.twitter.com/" target="_blank"><img src="/iconos/174834-social-media-logos/png/008-twitter.png"></a></div>
+                        <div id="iconos-redes"><a href="https://www.youtube.com/" target="_blank"><img src="/iconos/174834-social-media-logos/png/001-youtube.png"></a></div>
+                        <div id="iconos-redes"><a href="https://www.instagram.com/" target="_blank"><img src="/iconos/174834-social-media-logos/png/029-instagram.png"></a></div>
+                    </div>
+
+                </section>
+               
+            </footer>
+    
+        </body>
+</html>
