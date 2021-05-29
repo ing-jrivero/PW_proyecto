@@ -112,8 +112,9 @@
         width: 15rem;
         height:16rem;
         position: absolute;
-        background:#fff;
-        background:rgba(88, 88, 88, .95);
+        /*background:#fff;
+        background:rgba(88, 88, 88, .95);*/
+        background:rgba(0, 0, 0, .85);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
@@ -141,9 +142,10 @@
     .menu>li>a{
         display: block;
         padding: .8em 1.2em;
-        color:#353535;
+        /*color:#353535;
         color:#fff;
-        color:#521313;
+        color:#521313;*/
+        color:#9b1e1e;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         text-decoration: none;
@@ -160,8 +162,9 @@
         display: inline-block;
         position: absolute;
         /*border: 2px solid green;*/
-        background:rgb(250, 242, 242);
-        background:rgba(88, 88, 88, 0.95);
+        /*background:rgb(250, 242, 242);
+        background:rgba(88, 88, 88, 0.95);*/
+        background:rgba(0, 0, 0, .85);
         width: 93%;
         height:190%;
         margin-left: 14rem;
@@ -178,9 +181,10 @@
         
        /* display: block;*/
         padding: .8em;
-        color:black;
+        /*color:black;
         color: white;
-        color:#521313;
+        color:#521313;*/
+        color:#9b1e1e;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         text-decoration: none;
@@ -629,8 +633,9 @@
         width: 15rem;
         height:16rem;
         position: absolute;
-        background:#fff;
-        background:rgba(88, 88, 88, .95);
+        /*background:#fff;
+        background:rgba(88, 88, 88, .95);*/
+        background:rgba(0, 0, 0, .85);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
@@ -658,9 +663,10 @@
     .menu>li>a{
         display: block;
         padding: .8em 1.2em;
-        color:#353535;
+        /*color:#353535;
         color:#fff;
-        color:#521313;
+        color:#521313;*/
+        color:#9b1e1e;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         text-decoration: none;
@@ -677,8 +683,9 @@
         display: inline-block;
         position: absolute;
         /*border: 2px solid green;*/
-        background:rgb(250, 242, 242);
-        background:rgba(88, 88, 88, 0.95);
+        /*background:rgb(250, 242, 242);
+        background:rgba(88, 88, 88, 0.95);*/
+        background:rgba(0, 0, 0, .85);
         width: 93%;
         height:190%;
         margin-left: 14rem;
@@ -695,9 +702,10 @@
         
        /* display: block;*/
         padding: .8em;
-        color:black;
+        /*color:black;
         color: white;
-        color:#521313;
+        color:#521313;*/
+        color:#9b1e1e;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         text-decoration: none;

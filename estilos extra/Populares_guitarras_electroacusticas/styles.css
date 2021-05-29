@@ -110,7 +110,8 @@
         width: 15rem;
         height:16rem;
         position: absolute;
-        background:#fff;
+        /*background:#fff;*/
+        background:rgba(0, 0, 0, .85);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
@@ -138,7 +139,8 @@
     .menu>li>a{
         display: block;
         padding: .8em 1.2em;
-        color:#353535;
+        /*color:#353535;*/
+        color:#9b1e1e;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
     }
@@ -153,7 +155,8 @@
         display: inline-block;
         position: absolute;
         /*border: 2px solid green;*/
-        background:rgb(250, 242, 242);
+        /*background:rgb(250, 242, 242);*/
+        background:rgba(0, 0, 0, .85);
         width: 93%;
         height:190%;
         margin-left: 14rem;
@@ -170,7 +173,8 @@
         
        /* display: block;*/
         padding: .8em;
-        color:black;
+        /*color:black;*/
+        color:#9b1e1e;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
         
@@ -596,7 +600,8 @@
         width: 21.5rem;
         height:15rem;
         position: absolute;
-        background:#fff;
+        /*background:#fff;*/
+        background:rgba(0, 0, 0, .85);
         margin-left: -60%;
         z-index: 60;
         transition:all .5s;
@@ -625,7 +630,8 @@
     .menu>li>a{
         display: block;
         padding: .8em 1.2em;
-        color:#353535;
+        /*color:#353535;*/
+        color:#9b1e1e;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
     }
@@ -640,7 +646,8 @@
         display: inline-block;
         position: absolute;
         /*border: 2px solid green;*/
-        background:rgb(250, 242, 242);
+        /*background:rgb(250, 242, 242);*/
+        background:rgba(0, 0, 0, .85);
         width: 85%;
         height:190%;
         margin-left: 20.5rem;
@@ -657,7 +664,8 @@
         
        /* display: block;*/
         padding: .8em;
-        color:black;
+        /*color:black;*/
+        color:#9b1e1e;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
         
